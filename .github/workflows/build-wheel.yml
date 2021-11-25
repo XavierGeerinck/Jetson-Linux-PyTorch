@@ -3,11 +3,9 @@ name: ci
 # https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   push:
-    branches:
-      - "master"
+    branches: [ main ]
   release:
-    types:
-      - created
+    types: [ created ]
 
 jobs:
   build_wheels:
